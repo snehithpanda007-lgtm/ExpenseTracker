@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4cafef;
+}
+
+/* Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Inputs & Select */
+input,
+select {
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4cafef;
+}
+
+/* Button */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4cafef;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Divider */
+hr {
+  margin: 30px auto;
+  border: 1px solid #333;
+  max-width: 700px;
+}
+
+/* Expense Section */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Expense List */
+#expenseList {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  list-style: none;
+}
+
+#expenseList li {
+  background-color: #1e1e1e;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-left: 5px solid #4cafef;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Total */
+#totalAmount {
+  color: #4cafef;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
